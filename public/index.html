@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -39,6 +41,7 @@
     </nav>
 
     <header>
+      <div class='headAndBackground'>
       <div class="picture">
         <img src="/images/profile-hex.png">
       </div>
@@ -46,11 +49,12 @@
       <div>
         <h2>Darth Vader</h2>
       </div>
+    </div>
     </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container"><section class="new-tweet">
-      <h2>Compose Tweet</h2>
+      <!-- <h2>Compose Tweet</h2> -->
       <div class="inputbar">
       <form method="POST" action="/tweets">
         <label for="tweet-text">What are you humming about?</label>
@@ -58,9 +62,30 @@
       </div>
         <div class="tweet">
           <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
+          <output name="charCounter" class="charCounter" for="tweet-text">140</output>
         </div>
       </form>
-    </section></main>
+    </section>
+    <br><br>
+      <article class="tweeted">
+        <header><div class='personName'>Darth Vader</div> 
+          <div class="handle">
+            @iamyourfather
+          </div>
+        </header>
+        <br>
+        <div class="name">
+          You underestimate the power of the dark side.
+        </div>
+        <footer>
+          just now
+          <div class="icons">
+          <i class="fa-brands fa-font-awesome"></i>
+          <i class="fa-solid fa-retweet"></i>
+          <i class="fa-brands fa-galactic-republic"></i>
+          </div>
+        </footer>
+      </article>
+  </main>
   </body>
 </html>

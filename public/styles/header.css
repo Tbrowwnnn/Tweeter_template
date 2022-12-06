@@ -1,5 +1,5 @@
 
-header{
+.headAndBackground{
   display: flex;
   flex: 1;
   height: 520px;
@@ -23,5 +23,4 @@ h2{
   align-items: flex-end;
   order: 1;
   
-
 }
