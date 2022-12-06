@@ -1,0 +1,32 @@
+
+
+.tweet{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+button{
+  background-color: blue;
+  font-family: 'Bungee', cursive;
+}
+
+output{
+  display: flex;
+  font-family: 'Bungee', cursive;
+}
+
+textarea{
+  background-color: transparent;
+  flex-grow: 1;
+  border: none;
+  height: 5px;
+  border-bottom: 2px solid white;
+}
+
+form{
+  display: flex;
+
+  flex-direction: column;
+}

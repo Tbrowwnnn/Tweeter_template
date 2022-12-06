@@ -1,0 +1,27 @@
+
+header{
+  display: flex;
+  flex: 1;
+  height: 520px;
+  background-image: url("../images/stardust.png");
+  background-color: transparent;
+  flex-direction: column-reverse;
+
+} 
+
+.picture{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  order: 2;
+
+}
+
+h2{
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+  order: 1;
+  
+
+}
