@@ -45,12 +45,17 @@ form{
   flex-direction: column;
 }
 
+.tweeted:hover{
+  box-shadow: 5px 5px 5px rgb(248, 41, 41);
+}
+
 .tweeted header{
   display: flex;
   justify-content: space-between;
   margin-left: 1%;
   margin-right: 1%;
   margin-top: 1%;
+  margin-bottom: 3%;
 }
 
 .tweeted div.name{
@@ -79,10 +84,29 @@ form{
 }
 
 .tweeted div.personName{
+  display: flex;
   color: red;
+  flex-direction: row;
+}
+
+.tweeted div.justName{
+  display: flex;
+  align-self: center;
+  padding-left: 15px;
 }
 
 .tweeted div.icons{
-  color: red;
+  color: white;
+}
 
+.tweeted div.icons :hover{
+  color: rgb(248, 41, 41);
+}
+
+.tweeted img{
+  height: 75px;
+}
+.nameAndProfile{
+  display:flex;
+  flex-direction: column;
 }

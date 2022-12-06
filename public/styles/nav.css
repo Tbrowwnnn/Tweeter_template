@@ -30,9 +30,6 @@ span{
 .arrow_container{
   display: flex;
   align-self: center;
-}
-
-.fa-solid{
   color:orangered;
 }
 
