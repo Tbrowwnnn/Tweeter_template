@@ -1,22 +1,23 @@
-html {
-  box-sizing: border-box;
-}
 
-.nav{
+nav{
 display:flex;
 height: 120px;
 background-color: #4056a1;
 color: #FFFFFF;
-flex-grow: 1.5;
+position: fixed;
+width: 100%;
+
+
 }
 
-.span{
+span{
   display: flex;
-  flex: 1;
+  flex-grow: 1;
   font-size: 1.5em;
   font-family: 'Bungee', cursive;
   align-items: flex-start;
   padding: 1.5em;
+  
 }
 
 .word_container{
@@ -33,6 +34,9 @@ flex-grow: 1.5;
 
 .fa-solid{
   color:orangered;
-  
+}
+
+h2{
+  color: white;
 }
 
