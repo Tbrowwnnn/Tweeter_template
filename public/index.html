@@ -4,6 +4,14 @@
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.full.min.js" integrity="sha512-wb3lqal2VtYhmlPAr232VP+Zus676CFAEYdywxIUSxG6F/X9WhN6SpREkWUdwBvMpd6gCKuKTGHhdum6m1wOvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- <script type="text/javascript">
+      jQuery(document).ready(function() {
+        $("time.timeago").timeago();
+      });
+   </script> -->
+
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
@@ -56,7 +64,7 @@
     <main class="container"><section class="new-tweet">
       <!-- <h2>Compose Tweet</h2> -->
       <div class="inputbar">
-      <form method="POST" action="/tweets">
+      <form method="POST" action="/tweets" id="tweet-form">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
       </div>
@@ -67,25 +75,8 @@
       </form>
     </section>
     <br><br>
-      <article class="tweeted">
-        <header><div class='personName'><img src="/images/clipart314371.png"><div class="justName">Darth Vader</div></div>
-          <div class="handle">
-            @iamyourfather
-          </div>
-        </header>
-        <br>
-        <div class="name">
-          You underestimate the power of the dark side.
-        </div>
-        <footer>
-          just now
-          <div class="icons">
-          <i class="fa-brands fa-font-awesome"></i>
-          <i class="fa-solid fa-retweet"></i>
-          <i class="fa-brands fa-galactic-republic"></i>
-          </div>
-        </footer>
-      </article>
+    <div class ="tweet-container">
+      </div>
   </main>
   </body>
 </html>
