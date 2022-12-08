@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 $('#tweet-text').on('keydown', function(){
 
-  $('.errorMessage').remove();
+  $('.errorMessage').slideUp(500);
 
   counterText.text(num - this.value.length);
 
