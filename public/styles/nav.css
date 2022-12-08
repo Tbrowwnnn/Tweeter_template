@@ -2,38 +2,58 @@
 nav{
 display:flex;
 height: 120px;
-background-color: #4056a1;
 color: #FFFFFF;
 position: fixed;
 width: 100%;
-
-
 }
 
 span{
   display: flex;
   flex-grow: 1;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-family: 'Bungee', cursive;
   align-items: flex-start;
-  padding: 1.5em;
+  padding: 1em;
   
 }
 
 .word_container{
  display:flex;
  flex-direction: column;
- padding: 1.5em;
+ padding: 1em;
+ font-size: .75em;
+ text-align: center;
  /* justify-content: center; */
 }
 
 .arrow_container{
   display: flex;
   align-self: center;
-  color:orangered;
+  color:white;
+  
+  
 }
 
 h2{
   color: white;
 }
 
+@media only screen and (min-width: 768px){
+  nav{
+  background-image: linear-gradient(red, rgb(39, 11, 7));
+
+  }
+}
+
+@media only screen and (min-width: 550px){
+  .word_container{
+    font-size: 1em;
+    align-items: center;
+    padding: 1.5em
+  }
+
+  span{
+    font-size: 1.5em;
+    padding: 1.5em;
+  }
+ }

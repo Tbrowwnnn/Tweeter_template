@@ -7,7 +7,7 @@
 // Test / driver code (temporary). Eventually will get this from the server.
 $(document).ready(function() {
 
-
+  $('.errorMessageTooMany').hide();
   const renderTweets = function(tweets) {
     $('.tweet-container').empty();
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
     let username = tweetData.user.name;
     let profilePic = tweetData.user.avatars;
     let handle = tweetData.user.handle;
-    let status = `<p>${escape(tweetData.content.text)}</p>`;
+    let status = escape(tweetData.content.text);
     const ago = timeago.format(tweetData.created_at);
 
     const output = `<article class="tweeted">
@@ -78,8 +78,6 @@ $(document).ready(function() {
   
   loadTweets();
 
-  $('.errorMessage').hide();
-  
   $('#tweet-form').on('submit', function(event) {
     // const errorMessageBox = `<div class ="errorMessage">Not a valid tweet! - please keep your tweet within 140 characters</div>`
     event.preventDefault();
@@ -87,10 +85,18 @@ $(document).ready(function() {
     const obj = Object.fromEntries(new URLSearchParams(data));
     console.log(obj.text.length);
 
-   if(obj.text === '' || obj.text.length > 140 || obj.text === null){
-    $('.errorMessage').slideDown(1000);
+   if(obj.text.length > 140){
     
-   }else{
+    $('.errorMessageTooMany').text('Not a valid tweet! - please keep your tweet within 140 characters')
+    $('.errorMessageTooMany').slideDown(1000);
+    
+    
+   }else if(obj.text === '' || obj.text === null){
+
+    $('.errorMessageTooMany').text('Not a valid tweet! - tweet cannot be empty.')
+    $('.errorMessageTooMany').slideDown(1000);
+   }
+   else{
       $.post('/tweets', data, (respond) => {
         
         loadTweets();

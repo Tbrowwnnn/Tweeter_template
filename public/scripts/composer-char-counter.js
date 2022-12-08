@@ -1,15 +1,20 @@
 $(document).ready(function(){
   let num = 140;
   let counterText = $('.charCounter');
-  counterText.text(num);
   
   
+const charCount = function(){
+  counterText.text
+}
 
 $('#tweet-text').on('keydown', function(){
 
-  $('.errorMessage').slideUp(500);
+  $('.errorMessageTooMany').slideUp(500);
 
-  counterText.text(num - this.value.length);
+  setTimeout(() => {
+    counterText.text(num - this.value.length)
+    
+  }, 10);
 
   if(Number(counterText.text()) < 0){
 
@@ -17,7 +22,7 @@ $('#tweet-text').on('keydown', function(){
   }else{$('.negativeCounter').addClass('charCounter').removeClass('negativeCounter');}
     
   });
-  
+
 })
 
 
