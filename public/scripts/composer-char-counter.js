@@ -1,11 +1,13 @@
 $(document).ready(function(){
   let num = 140;
   let counterText = $('.charCounter');
+  counterText.text(num);
   
   
 
 $('#tweet-text').on('keydown', function(){
 
+  $('.errorMessage').remove();
 
   counterText.text(num - this.value.length);
 
