@@ -14,13 +14,13 @@ This repository is a twitter clone that was made purely for education purposes o
 
 ## Screenshots
 
-Main home page (Desktop) 
+![Main home page (Desktop)](https://github.com/Tbrowwnnn/Tweeter_template/blob/master/main%20desktop.PNG) 
 
-Main home page(tablet)
+![Main home page(tablet)](https://github.com/Tbrowwnnn/Tweeter_template/blob/master/tweeter%20tablet.PNG)
 
-Main Home page (mobile)
+![Main Home page (mobile)](https://github.com/Tbrowwnnn/Tweeter_template/blob/master/Tweeter%20mobile.PNG)
 
-New Tweet
+![New Tweet](https://github.com/Tbrowwnnn/Tweeter_template/blob/master/new%20tweet.PNG)
 
 ## Getting Started
 
