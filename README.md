@@ -4,13 +4,13 @@ Tweeter is a simple, single-page Twitter clone.
 
 This repository is a twitter clone that was made purely for education purposes only. Styled in a Darth Vader color palette and profile theme, it has the following functionality:
 
--ability to view tweets on a profile home page. 
--submit new tweets with a randomized profile picture, name, and tweet handle after submitted. 
--code is using jquery to load tweets asyncronously, therefore there is no need to refresh the page. 
--error message that pops up when certain conditions are not met when submitting tweet. 
--stylized changes based on mobile and desktop sizes. 
--new tweets display time submitted and will update based on time passed. 
--tweets have a character counter that will change red when going below character limit. 
+-ability to view tweets on a profile home page. <br>
+-submit new tweets with a randomized profile picture, name, and tweet handle after submitted. <br>
+-code is using jquery to load tweets asyncronously, therefore there is no need to refresh the page. <br>
+-error message that pops up when certain conditions are not met when submitting tweet. <br>
+-stylized changes based on mobile and desktop sizes. <br>
+-new tweets display time submitted and will update based on time passed. <br>
+-tweets have a character counter that will change red when going below character limit. <br>
 
 ## Screenshots
 
