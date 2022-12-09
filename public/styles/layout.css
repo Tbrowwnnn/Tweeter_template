@@ -29,9 +29,8 @@ main{
   margin-left: 5%;
   color: white;
 }
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+
+/* elements adjusted when scaled above 900px */
  @media only screen and (min-width: 900px){
   header .headAndBackground{
     display: flex;
@@ -39,7 +38,7 @@ main{
     width: 45%;
     float: left;
     margin: 1em;
-    margin-top: 5em;
+    margin-top: 7em;
     margin-right: 0;
     padding: 2em;
    }

@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.full.min.js" integrity="sha512-wb3lqal2VtYhmlPAr232VP+Zus676CFAEYdywxIUSxG6F/X9WhN6SpREkWUdwBvMpd6gCKuKTGHhdum6m1wOvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<head>
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
 
-    <!-- <script type="text/javascript">
-      jQuery(document).ready(function() {
-        $("time.timeago").timeago();
-      });
-   </script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.full.min.js"
+    integrity="sha512-wb3lqal2VtYhmlPAr232VP+Zus676CFAEYdywxIUSxG6F/X9WhN6SpREkWUdwBvMpd6gCKuKTGHhdum6m1wOvQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">
-
-    <style> @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap'); </style>
-
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+    rel="stylesheet">
     
+<!-- imported fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+  </style>
 
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
-    <script src="/scripts/composer-char-counter.js"></script>
-  </head>
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-      <span>tweeter</span>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
+  <script src="/scripts/composer-char-counter.js"></script>
+</head>
 
-      <div class="word_container">
-        <div><strong>Write</strong> a new tweet</div>
+<body>
+  <!-- Top nav bar -->
+  <nav>
 
-        <div class="arrow_container"><i class="fa-solid fa-angles-down"></i></div>
-       </div>
-    </nav>
+    <span>tweeter</span>
 
-    <header>
-      <div class='headAndBackground'>
+    <div class="word_container">
+      <div><strong>Write</strong> a new tweet</div>
+
+      <div class="arrow_container"><i class="fa-solid fa-angles-down"></i></div>
+    </div>
+  </nav>
+  <header>
+    <div class='headAndBackground'>
       <div class="picture">
         <img src="/images/clipart314371.png">
       </div>
@@ -58,28 +64,32 @@
         <h2>Darth Vader</h2>
       </div>
     </div>
-    </header>
+  </header>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container"><section class="new-tweet">
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <section class="new-tweet">
+      <!-- Where error messages pop up -->
       <div class="errorMessageTooMany"></div>
-      <!-- <h2>Compose Tweet</h2> -->
+      <!-- Compose Tweet Bar -->
       <div class="inputbar">
-      <form method="POST" action="/tweets" id="tweet-form">
-        <label for="tweet-text">What are you humming about?</label>
-        <textarea name="text" id="tweet-text"></textarea>
+        <form method="POST" action="/tweets" id="tweet-form">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
       </div>
-        <div class="tweet">
-          <div class="tweetanderror">
+      <div class="tweet">
+        <div class="tweetanderror">
           <button type="submit">Tweet</button>
-          </div>
-          <output name="charCounter" class="charCounter" for="tweet-text">140</output>
         </div>
+        <output name="charCounter" class="charCounter" for="tweet-text">140</output>
+      </div>
       </form>
     </section>
     <br><br>
-    <div class ="tweet-container">
-      </div>
+    <!-- container where new tweets go -->
+    <div class="tweet-container">
+    </div>
   </main>
-  </body>
+</body>
+
 </html>

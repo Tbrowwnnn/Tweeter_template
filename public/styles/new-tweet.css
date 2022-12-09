@@ -1,62 +1,56 @@
-
-
-.tweet{
+.tweet {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   overflow-wrap: break-word;
 }
 
-
-button{
+button {
   background-color: red;
   color: white;
-  font-family: 'Bungee', cursive ;
+  font-family: 'Bungee', cursive;
   margin-top: .15em;
   border-radius: 5px;
 }
 
-.charCounter{
+.charCounter {
   display: flex;
   font-family: 'Bungee', cursive;
 }
 
-.negativeCounter{
+.negativeCounter {
   color: red;
   font-family: 'Bungee', cursive;
 }
 
-textarea{
+textarea {
   background-color: transparent;
   color: whitesmoke;
   flex-grow: 1;
   border: none;
   height: 40px;
   border-bottom: 2px solid white;
-  
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
 }
 
-.tweeted{
+.tweeted {
   display: flex;
   border-color: rgb(248, 196, 196);
   border-style: solid;
   flex-direction: column;
   border-radius: 12px;
   background-image: linear-gradient(rgb(37, 37, 37), rgb(5, 5, 5));
-  
 }
 
-.tweeted:hover{
+.tweeted:hover {
   box-shadow: 5px 5px 5px rgb(248, 41, 41);
-
 }
 
-.tweeted header{
+.tweeted header {
   display: flex;
   justify-content: space-between;
   margin-left: 1%;
@@ -65,7 +59,7 @@ form{
   margin-bottom: 3%;
 }
 
-.name{
+.name {
   overflow-wrap: break-word;
   margin-left: 1%;
   margin-right: 1%;
@@ -76,75 +70,75 @@ form{
   border-bottom: solid;
 }
 
-.tweeted footer{
+.tweeted footer {
   display: flex;
   justify-content: space-between;
   font-size: medium;
   margin: 1%;
-  
 }
 
-.tweeted div.handle{
+.tweeted div.handle {
   overflow-wrap: break-word;
 
   color: lightcoral;
   font-size: .75em
 }
 
-.tweeted div.personName{
+.tweeted div.personName {
   display: flex;
   color: red;
   flex-direction: row;
 }
 
-.tweeted div.justName{
+.tweeted div.justName {
   display: flex;
   align-self: center;
   padding-left: 15px;
   font-size: .85em
 }
 
-.tweeted div.icons{
+.tweeted div.icons {
   color: white;
 }
 
-.tweeted div.icons :hover{
+.tweeted div.icons :hover {
   color: rgb(248, 41, 41);
 }
 
-.tweeted img{
+.tweeted img {
   height: 75px;
 }
-.nameAndProfile{
-  display:flex;
+
+.nameAndProfile {
+  display: flex;
   flex-direction: column;
 }
 
-.tweetanderror{
-  display:flex;
+.tweetanderror {
+  display: flex;
   flex-direction: row;
   flex-grow: 1;
 }
 
-.errorMessageTooMany{
+.errorMessageTooMany {
   display: flex;
-  color:rgb(248, 41, 41);
+  color: rgb(248, 41, 41);
   padding-left: 2%;
   margin-bottom: 2%;
   border-style: solid;
-  border-color:rgb(248, 41, 41);
+  border-color: rgb(248, 41, 41);
   justify-content: center;
 }
 
-@media only screen and (min-width: 550px){
-  .tweeted div.justName{
+@media only screen and (min-width: 550px) {
+  .tweeted div.justName {
     display: flex;
     align-self: center;
     padding-left: 15px;
     font-size: 1em;
   }
 
-  .tweeted div.handle{
+  .tweeted div.handle {
     display: flex;
     font-size: 1em
   }

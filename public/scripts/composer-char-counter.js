@@ -1,28 +1,22 @@
-$(document).ready(function(){
+$(document).ready(function() {
   let num = 140;
   let counterText = $('.charCounter');
-  
-  
-const charCount = function(){
-  counterText.text
-}
 
-$('#tweet-text').on('keydown', function(){
+  //sets char count to subtract from char limit 
+  $('#tweet-text').on('keydown', function() {
 
-  $('.errorMessageTooMany').slideUp(500);
+    $('.errorMessageTooMany').slideUp(500); //slides up error message if present
 
-  setTimeout(() => {
-    counterText.text(num - this.value.length)
-    
-  }, 10);
+    setTimeout(() => {
+      counterText.text(num - this.value.length);
+    }, 10);
 
-  if(Number(counterText.text()) < 0){
+    //if counter is below 0 then class is changed to accomodate red color
+    if (Number(counterText.text()) < 0) {
 
-    $('.charCounter').addClass('negativeCounter').removeClass('charCounter');
-  }else{$('.negativeCounter').addClass('charCounter').removeClass('negativeCounter');}
-    
+      $('.charCounter').addClass('negativeCounter').removeClass('charCounter');
+    } else { $('.negativeCounter').addClass('charCounter').removeClass('negativeCounter'); }
   });
-
 })
 
 
