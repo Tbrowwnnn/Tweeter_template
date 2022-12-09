@@ -15,11 +15,11 @@ This repository is a twitter clone that was made purely for education purposes o
 ## Screenshots
 
 Desktop View
-![Main home page (Desktop)](https://github.com/Tbrowwnnn/Tweeter_template/blob/master/docs/main%20desktop.PNG) 
+![Main home page (Desktop)](https://github.com/Tbrowwnnn/Tweeter_template/blob/master/docs/main%20desktop.PNG)<br> 
 Tablet View
-![Main home page(tablet)](https://github.com/Tbrowwnnn/Tweeter_template/blob/master/docs/tweeter%20tablet.PNG)
+![Main home page(tablet)](https://github.com/Tbrowwnnn/Tweeter_template/blob/master/docs/tweeter%20tablet.PNG)<br> 
 Mobile View
-![Main Home page (mobile)](https://github.com/Tbrowwnnn/Tweeter_template/blob/master/docs/Tweeter%20mobile.PNG)
+![Main Home page (mobile)](https://github.com/Tbrowwnnn/Tweeter_template/blob/master/docs/Tweeter%20mobile.PNG)<br> 
 New Tweet
 ![New Tweet](https://github.com/Tbrowwnnn/Tweeter_template/blob/master/docs/new%20tweet.PNG)
 
