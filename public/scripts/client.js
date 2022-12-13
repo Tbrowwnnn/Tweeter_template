@@ -25,10 +25,10 @@ $(document).ready(function() {
   // This creates template for new tweets
   const createTweetElement = function(tweetData) {
 
-    let username = tweetData.user.name;
-    let profilePic = tweetData.user.avatars;
-    let handle = tweetData.user.handle;
-    let status = escape(tweetData.content.text);
+    const username = tweetData.user.name;
+    const profilePic = tweetData.user.avatars;
+    const handle = tweetData.user.handle;
+    const status = escape(tweetData.content.text);
     const ago = timeago.format(tweetData.created_at);
 
     //template HTML that will get appended to index.html
@@ -88,9 +88,13 @@ $(document).ready(function() {
     }
     else {  //if checks pass then send tweet to /tweets
       $.post('/tweets', data, (respond) => {
-
+        
         loadTweets();
         $('#tweet-form')[0].reset();
+
+      }).fail(function(){
+        $('.errorMessageTooMany').text('Error from server');
+        $('.errorMessageTooMany').slideDown(1000);
       });
     }
   });
